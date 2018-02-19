@@ -20,10 +20,12 @@
                 android:layout_width="150dp"
                 android:layout_height="150dp">
 
-               <ImageView
-                   android:scr="@drawable/station1"
-                   android:layout_width="match_parent"
-                   android:layout_height="match_parent"  />
+                <ImageView
+                    android:src="@drawable/station1"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" />
+
+
 
             </RelativeLayout>
 
@@ -39,7 +41,6 @@
 
 
     </LinearLayout>
-
 
 
 </RelativeLayout>
