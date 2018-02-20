@@ -3,7 +3,6 @@
     android:orientation="vertical" android:layout_width="match_parent"
     android:layout_height="match_parent">
 
-
     <!--Red Layout-->
     <LinearLayout
         android:background="#82ffffff"
@@ -34,6 +33,20 @@
                     android:layout_alignParentTop="true"
                     android:src="@drawable/station1" />
 
+                <!--title-->
+            <TextView
+                android:layout_alignParentBottom="true"
+                android:padding="5dp"
+                android:gravity="center_horizontal"
+                android:textColor="#ffffff"
+                android:background="#82000000"
+                android:textStyle="bold"
+                android:textSize="18sp"
+                android:text="station 1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+
             </RelativeLayout>
 
             <!--Green Layout-->
@@ -53,6 +66,7 @@
                     android:layout_alignParentStart="true"
                     android:layout_alignParentTop="true"
                     android:src="@drawable/station2" />
+
 
             </RelativeLayout>
 
