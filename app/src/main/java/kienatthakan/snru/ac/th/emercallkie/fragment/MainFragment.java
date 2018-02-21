@@ -84,6 +84,7 @@ public class MainFragment extends Fragment{
         });
 
 
+
         //      For station 4
         ImageView station4ImageView = getView().findViewById(R.id.imageViewStation4);
         station4ImageView.setOnClickListener(new View.OnClickListener() {
