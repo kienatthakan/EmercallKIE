@@ -3,10 +3,12 @@ package kienatthakan.snru.ac.th.emercallkie.fragment;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.v4.app.Fragment;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
+import android.widget.TextView;
 
 import kienatthakan.snru.ac.th.emercallkie.MainActivity;
 import kienatthakan.snru.ac.th.emercallkie.R;
@@ -17,24 +19,48 @@ import kienatthakan.snru.ac.th.emercallkie.R;
 
 public class MainFragment extends Fragment{
 
+    //   Explicit
+    private String tag = "MyTagV1";
+
+
     @Override
     public void onActivityCreated(@Nullable Bundle savedInstanceState) {
         super.onActivityCreated(savedInstanceState);
 
-        //  For station 1
+        //      For station 1
         ImageView station1ImageView = getView().findViewById(R.id.imageViewStation1);
+        station1ImageView.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
 
-        //  For station 2
+                Log.d(tag, "You click Image station1");
+
+            }
+        });
+
+        TextView station1TextView =getView().findViewById(R.id.textViewStation1);
+        station1TextView.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Log.d (tag, "click Text" + getString(R.string.station1));
+            }
+        });
+
+        //      For station 2
 
 
-        //  For station 3
+        //      For station 3
 
 
-        //  For station 4
+        //      For station 4
 
 
 
     }  //Main Method
+
+    public void callStation(String numberCall){
+
+    }
 
 
 
