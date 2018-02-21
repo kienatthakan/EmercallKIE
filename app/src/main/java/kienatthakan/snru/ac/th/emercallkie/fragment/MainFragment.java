@@ -6,7 +6,9 @@ import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ImageView;
 
+import kienatthakan.snru.ac.th.emercallkie.MainActivity;
 import kienatthakan.snru.ac.th.emercallkie.R;
 
 /**
@@ -14,6 +16,27 @@ import kienatthakan.snru.ac.th.emercallkie.R;
  */
 
 public class MainFragment extends Fragment{
+
+    @Override
+    public void onActivityCreated(@Nullable Bundle savedInstanceState) {
+        super.onActivityCreated(savedInstanceState);
+
+        //  For station 1
+        ImageView station1ImageView = getView().findViewById(R.id.imageViewStation1);
+
+        //  For station 2
+
+
+        //  For station 3
+
+
+        //  For station 4
+
+
+
+    }  //Main Method
+
+
 
     @Nullable
     @Override
