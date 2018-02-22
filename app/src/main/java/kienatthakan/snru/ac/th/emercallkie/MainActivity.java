@@ -8,7 +8,10 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.support.v7.widget.Toolbar;
 import android.view.MenuItem;
+import android.view.View;
+import android.widget.TextView;
 
+import kienatthakan.snru.ac.th.emercallkie.fragment.HospifalFragment;
 import kienatthakan.snru.ac.th.emercallkie.fragment.MainFragment;
 
 
@@ -22,6 +25,54 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
+//        Police Controller
+        TextView policeTextView = findViewById(R.id.txtPolice);
+        policeTextView.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                getSupportFragmentManager().beginTransaction()
+                        .replace(R.id.contentMainFragment,new MainFragment()).commit();
+                drawerLayout.closeDrawers();
+            }
+        });
+
+
+//        Hospital Controller
+        TextView hospitalTextView = findViewById(R.id.txtHospital);
+        hospitalTextView.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                getSupportFragmentManager().beginTransaction()
+                        .replace(R.id.contentMainFragment,new HospifalFragment()).commit();
+                drawerLayout.closeDrawers();
+            }
+        });
+
+
+//        Insurance Controller
+        TextView insuranceTextView = findViewById(R.id.txtInsurance);
+        insuranceTextView.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                getSupportFragmentManager().beginTransaction()
+                        .replace(R.id.contentMainFragment,new MainFragment()).commit();
+                drawerLayout.closeDrawers();
+            }
+        });
+
+//        Exit Controller
+        TextView ExitTextView = findViewById(R.id.txtExit);
+        ExitTextView.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                getSupportFragmentManager().beginTransaction()
+                        .replace(R.id.contentMainFragment,new MainFragment()).commit();
+                drawerLayout.closeDrawers();
+
+            }
+        });
+
 
 //        Create Toolbar
         Toolbar toolbar = findViewById(R.id.toolbarMain);
