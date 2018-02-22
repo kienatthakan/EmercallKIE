@@ -50,6 +50,7 @@ public class MainActivity extends AppCompatActivity {
         });
 
 
+
 //        Insurance Controller
         TextView insuranceTextView = findViewById(R.id.txtInsurance);
         insuranceTextView.setOnClickListener(new View.OnClickListener() {
